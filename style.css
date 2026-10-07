@@ -1,0 +1,459 @@
+body{
+    background-color: white;
+}
+
+.envelope {
+    width: 658px;
+    height: auto;
+    position: absolute;
+    left: 87px;
+    z-index: 3;
+    margin: 400px auto 0;
+    transition:opacity 1s ease;
+    
+}
+.envelope_button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.envelope.fade {
+    opacity: 0;
+}
+
+
+.folder1 {
+    position: absolute;
+    opacity: 0;
+    top: 116px;
+    left: 38px;
+    width: 116%;
+    height: auto;
+    z-index: 1;
+    transition: opacity 1s ease ;
+}
+
+.folder1.fade {
+    opacity: 1;
+}
+
+.folder1.move {
+    transform: translateY(-200px);
+}
+
+.tap_text{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 46px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-top: 883px;
+    margin-left: 260px;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    animation: blink 1.5s infinite;
+
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+.invitation{
+    display:none;
+}
+
+.folder2 {
+    position: absolute;
+    top: 400px;
+    left: 170px;
+    width: 67%;
+    height: auto;
+    z-index: 2;
+}
+
+
+.paper {
+    position: absolute;
+    top: 932px;
+    left: 55px;
+    width: 50%;
+    height: auto;
+    transform: rotate(300deg);
+    z-index: 3;
+}
+
+.paper2 {
+    position:absolute;
+    top: 2810px;
+    left: 380px;
+    width: 60%;
+    height: auto;
+    transform: rotate(3deg);
+    z-index: 3;
+}
+
+.columnL {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 90%;
+    height: auto;
+    z-index: 10;
+}
+
+.columnR {
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    width: 90%;
+    height: auto;
+    z-index: 10;
+}
+
+.batB {
+    position:absolute;
+    left: 270px;
+    bottom: -1836px;
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    z-index: 1;
+}
+
+.batS {
+    position:absolute;
+    top: 1555px;
+    left: 490px;
+    width: 48%;
+    height: auto;
+    z-index: 3;
+}
+
+.eyes {
+    position:absolute;
+    top: 1316px;
+    left: 250px;
+    width: 23%;
+    height: auto;
+    transform: rotate(322deg);
+    z-index: 10;
+}
+
+.hand {
+    position: absolute;
+    top: 1946px;
+    left: 0px;
+    width: 45%;
+    height: auto;
+    transform: rotate(-15deg);
+    z-index: 2;
+}
+
+.frame_A {
+    position:absolute;
+    top: 1620px;
+    left: 530px;
+    width: 40%;
+    height: auto;
+    z-index: 1;
+}
+.frame_B {
+    position:absolute;
+    top: 2840px;
+    left: 538px;
+    width: 30%;
+    height: auto;
+    transform: rotate(93deg);
+    z-index: 4;
+}
+
+.frame_D {
+    position:absolute;
+    top: 2223px;
+    left: 158px;
+    width: 40%;
+    height: auto;
+    z-index: 1;
+}
+.frame_C {
+    position:absolute;
+    top: 3165px;
+    left: 114px;
+    width: 47%;
+    transform: rotate(90deg);
+    height: auto;
+    z-index: 2;
+}
+
+
+.spider {
+    position:absolute;
+    left: -187px;
+    top: 2850px;
+    width: 98%;
+    height: auto;
+    z-index: 2;
+}
+
+
+.skeleton {
+    position:absolute;
+    left: 555px;
+    top: 2191px;
+    width: 37%;
+    height: auto;
+    opacity: 70%;
+    z-index: 1;
+}
+
+.thorax {
+    position:absolute;
+    left: -23px;
+    top: 1460px;
+    width: 49%;
+    height: auto;
+    opacity: 30%;
+    z-index: 1;
+}
+
+.pumpkin {
+    position:absolute;
+    left: 502px;
+    top: 1097px;
+    width: 43%;
+    height: auto;
+    transform: rotate(10deg);
+    opacity: 80%;
+    z-index: 1;
+}
+
+
+.web {
+    position:absolute;
+    left: -211px;
+    top: 2600px;
+    width: 77%;
+    height: auto;
+    z-index: 1;
+}
+
+
+
+
+
+.invitation > * {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.folder2 {
+    animation-delay: 0s;
+}
+
+.paper {
+    animation-delay: 1s;
+}
+
+.pumpkin {
+    animation-delay: 1.4s;
+}
+
+.columnL,
+.columnR {
+    animation-delay: 0.7s;
+}
+
+.eyes {
+    animation-delay: 1.8s;
+}
+
+.batS {
+    animation-delay: 2.4s;
+}
+
+.frame_A {
+    animation-delay: 2.4s;
+}
+
+.thorax {
+    animation-delay: 2s;
+}
+.hand{
+    animation-delay: 2.8s;
+}
+
+
+
+.paper2,
+.frame_B,
+.frame_C,
+.frame_D,
+.spider,
+.skeleton,
+.web {
+    opacity: 0;
+    animation: scrollFade linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
+}
+
+@keyframes scrollFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.invite_text {
+    position: absolute;
+    z-index: 20;
+}
+
+.invite_text > * {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.t1 {
+    animation-delay: 1s;
+}
+
+.t2 {
+    animation-delay: 2.4s;
+}
+
+.t3,
+.t4,
+.t5,
+.t6 {
+    opacity: 0;
+    animation: textFade linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 35%;
+}
+
+@keyframes textFade {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.invite_text {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+}
+
+.t1 {
+    position: absolute;
+    top: 1132px;
+    left: 68px;
+    font-size: 69px;
+    color: #ffffff;
+}
+
+.t2 {
+    position: absolute;
+    top: 1792px;
+    left: 592px;
+    font-size: 41px;
+    color: #000000;
+}
+
+
+.t3 {
+    position: absolute;
+    top: 3379px;
+    left: 143px;
+    font-size: 44px;
+    color: #000000;
+}
+
+.t4{
+    position: absolute;
+    top: 3504px;
+    left: 188px;
+    font-size: 24px;
+    color: #000000;
+}
+.t5 {
+    position: absolute;
+    top: 2277px;
+    left: 222px;
+    font-size: 65px;
+    color: #000000;
+}
+
+.t6 {
+    position: absolute;
+    top: 2915px;
+    left: 491px;
+    font-size: 46px;
+    color: #000000;
+}
+
+.invite_text {
+    position: absolute;
+    font-family: "IM FELL English SC", serif;
+    width: 100%;
+    z-index: 20;
+}
+
+
+.map_button {
+    position: absolute;
+    top: -5px;
+    left: -7px;
+    width: 100%;
+    height: 500px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.map {
+    display: none;
+    position: fixed;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    cursor: pointer;
+}
