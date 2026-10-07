@@ -22,7 +22,7 @@ envelopeButton.addEventListener("click", function() {
     }, 1500);
 
 
-}, 3000);
+}, 15000);
     envelope.classList.add("fade");
 
 
