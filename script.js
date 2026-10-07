@@ -7,10 +7,7 @@ envelopeButton.addEventListener("click", function() {
 
     // Envelope fades and moves away
     envelope.classList.add("fade");
-    setTimeout(function() {
-        folder1.classList.add("fade");
-    }, 1000);
-    folder1.classList.add("move");
+
 
     // Show second page after the envelope animation
     setTimeout(function() {
