@@ -4,12 +4,29 @@ const folder1 = document.querySelector(".folder1");
 const invitationScreen = document.querySelector(".invitation");
 
 envelopeButton.addEventListener("click", function() {
+     setTimeout(function() {
+    const jumpscare = document.querySelector(".jumpscare");
+    const scream = document.getElementById("scream");
 
-    // Envelope fades and moves away
+    scream.currentTime = 0;
+    scream.play();
+
+    setTimeout(function() {
+        jumpscare.style.display = "flex";
+    }, 50);
+
+    setTimeout(function() {
+        jumpscare.style.display = "none";
+        scream.pause();
+        scream.currentTime = 0;
+    }, 1500);
+
+
+}, 3000);
     envelope.classList.add("fade");
 
 
-    // Show second page after the envelope animation
+    
     setTimeout(function() {
         invitationScreen.style.display = "block";
     }, 1000);
