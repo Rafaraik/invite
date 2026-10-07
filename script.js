@@ -13,7 +13,7 @@ envelopeButton.addEventListener("click", function() {
 
     setTimeout(function() {
         jumpscare.style.display = "flex";
-    }, 50);
+    }, 70);
 
     setTimeout(function() {
         jumpscare.style.display = "none";
