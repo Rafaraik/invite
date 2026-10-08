@@ -6,23 +6,20 @@ const invitationScreen = document.querySelector(".invitation");
 envelopeButton.addEventListener("click", function() {
      setTimeout(function() {
     const jumpscare = document.querySelector(".jumpscare");
-    const scream = document.getElementById("scream");
+    const video =document.getElementById("jumpscareVideo");
 
-    scream.currentTime = 0;
-    scream.play();
+    video.currentTime = 0;
+    jumpscare.style.display = "flex";
+    video.play();
 
-    setTimeout(function() {
-        jumpscare.style.display = "flex";
-    }, 50);
-
-    setTimeout(function() {
-        jumpscare.style.display = "none";
-        scream.pause();
-        scream.currentTime = 0;
-    }, 1500);
+        setTimeout(function(){
+            jumpscare.style.display = "none";
+            video.pause();
+            video.currentTime = 0;
+        }, 1500);
 
 
-}, 6700);
+}, 3000);
     envelope.classList.add("fade");
 
 
