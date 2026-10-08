@@ -362,7 +362,7 @@ body{
 .t1 {
     position: absolute;
     top: 1076px;
-    left: 119px;
+    left: 116px;
     font-size: 74px;
     color: #ffffff;
     font-family: "Emilys Candy", cursive;
@@ -371,7 +371,7 @@ body{
 .t2 {
     position: absolute;
     top: 1893px;
-    left: 540px;
+    left: 535px;
     font-size: 90px;
     color: #000000;
     font-family: "Jolly Lodger", cursive;
@@ -381,7 +381,7 @@ body{
 .t3 {
     position: absolute;
     top: 3799px;
-    left: 158px;
+    left: 156px;
     font-size: 49px;
     color: #000000;
     font-family: "IM FELL English SC", serif;
@@ -389,7 +389,7 @@ body{
 
 .t4{
     position: absolute;
-    top: 3950px;
+    top: 3955px;
     left: 223px;
     font-size: 24px;
     color: #000000;
@@ -407,7 +407,7 @@ body{
 .t6 {
     position: absolute;
     top: 73px;
-    left: 84px;
+    left: 81px;
     font-size: 40px;
     color: #000000;
     z-index: 6;
